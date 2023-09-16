@@ -45,6 +45,10 @@
 
 /* General Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -71,6 +75,9 @@ strong{
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+
+/* Buttons */
 
 .btn{
     display: inline-block;
@@ -193,6 +200,29 @@ header{
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+    background: var(--clr-accent);
 }
 
 .hamburger {
