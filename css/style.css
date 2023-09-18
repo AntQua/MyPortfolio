@@ -71,6 +71,16 @@ strong{
     font-weight: var(--fw-bold) ;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
+
+a:hover{
+    color: var(--clr-accent);
+}
+
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
@@ -429,6 +439,9 @@ header{
 }
 
 .portfolio__img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -443,6 +456,15 @@ header{
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .75;
+}
+
+.portfolio-item-individual p {
+    text-align: justify;
+}
+
+.portfolio-item-individual img{
+    width: 100%;
+    height: 25em; 
 }
 
 
