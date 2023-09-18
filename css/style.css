@@ -163,6 +163,7 @@ header{
     left: 0;
     right: 0;
     z-index: 100;
+    opacity: 95%;
 
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1); ;
@@ -267,6 +268,7 @@ header{
 }
 
 
+
 @media (min-width: 600px) {
     .intro{
         display: grid;
@@ -286,6 +288,10 @@ header{
         z-index: 2;
     }
 
+    .section__title--intro strong{
+        font-size: 3rem;
+    }
+
     .section__subtitle--intro{
         align-self: start;
         grid-column: -1 / 1;
@@ -301,6 +307,7 @@ header{
 /* -------------------- My Skills Section --------------------*/
 
 .my-skills{
+    position: relative;
     background-color: var(--clr-dark);
     background-image: url(../images/services-bg.jpg);
     background-size: cover;
@@ -332,6 +339,15 @@ header{
 .skill{
     max-width: 500px;
     margin: 0 auto;
+}
+
+.go-top__skills{
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    padding: 10px 20px; 
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
 }
 
 @media (min-width: 800px) {
@@ -438,6 +454,14 @@ header{
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    position: relative;
+}
+
+.go-top__footer{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    padding: 10px 20px; 
 }
 
 .footer a{
