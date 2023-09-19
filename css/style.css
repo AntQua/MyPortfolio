@@ -470,6 +470,10 @@ header{
     height: 25em; 
 }
 
+.portfolio-item-individual ul{
+    padding-left: 200px;
+}
+
 
 /* -------------------- Footer --------------------*/
 

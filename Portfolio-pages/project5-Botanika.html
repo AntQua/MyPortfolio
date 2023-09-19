@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js" defer></script>
+    <title>Project 5 - Botanika</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo2.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#skills" class="nav__link">What I Do</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#projects" class="nav__link">My Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Botanika <strong>Individual project</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">e-commerce web app</p>
+        <img src="../images/Project5-Botanika/Botanika.png" alt="starting page image of the Botanika website" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p><a href="https://cloud462022.azurewebsites.net/" target="_blank">Botanika</a> is my final project of the Software Development Academy
+            at <a href="https://www.lewagon.com/" target="_blank">Rumos</a>, Lisbon, finished in May 2022.</p>
+
+        <img src="../images/Project5-Botanika/Botanika-details.png" alt="a detail of Cera Kocher Portfolio">
+
+        <p><a href="https://cloud462022.azurewebsites.net/" target="_blank">Botanika</a> 
+            cloud software solution for gardenig enthusiasts which includes the online sale of flowers, plants and products for their cultivation.</p>
+        <p>To explore the project, visit the <a href="https://cloud462022.azurewebsites.net/" target="_blank">Botanika <i class="fa-solid fa-link"></i></a> website.</p>
+        <p>For a deeper look into the project's codebase, you can check out the <a
+                href="https://github.com/AntQua/Botanika" target="_blank"><i class="fa-brands fa-github"></i> GitHub repository.</a></p>
+        <p><strong>Environment and used Tools:</strong></p>
+        <ul>
+            <li>Windows 10 and Visual Studio 2019</li>
+            <li>SQL Server 2019 Express – used for storing and administering
+                information in the relational database tables during
+                project development phase. After deployment to the
+                cloud is used the Azure SQL database.</li>
+            <li>Entity Framework Core – Tool to perform the
+                object relational mapping between entities and tables
+                of the database.</li>
+            <li>Bootstrap v4.3.1 – HTML, CSS and JS library used to
+                simplify the development of web pages (Views).</li>
+        </ul>
+        <p><strong>Architecture solution:</strong>  Template used - ASP.Net Core MVC .Net 5.0 Framework.</p>
+        <p><strong>Authentication and Authorization: </strong>  ASP .NetCore Identity API.</p>
+        <p><strong>The Admin / BackOffice Area: </strong></p>
+        <ul>
+            <li>To accommodate this part of the project we use the concept of Areas
+                permitted by ASP. Net Core MVC to partition applications into
+                smaller units that are referred to as areas.</li>
+            <li>This area also has access to the data layer through the
+                Repository.</li>
+            <li>To access this Area, the creation of Roles and Users was implemented and
+                assigning the user to the profile. A service has been implemented to create
+                profiles or roles: Admin and Member.</li>
+        </ul>
+        <p><strong>Azure Resources:</strong></p>
+        <ul>
+            <li>Azure App Service - 
+                Is an HTTP-based service to host the generated web application
+                for this project.</li>
+            <li>SQL database - 
+                Azure SQL Database is based on SQL Server and provides the core functionality
+                relational data required for the project, namely products, categories and orders
+                of customers.</li>
+            <li>Storage account - The images are stored in several Containers provided by the blob service of
+                Storage account. The use of this resource is used in the Backoffice of our application for management
+                of the images used and supplying them to the application.</li>
+            <li>Resourse Group - 
+                All the aforementioned Azure services are hosted in a Resource
+                Exclusive group for this project that acts as a repository for
+                administration thereof.</li>
+        </ul>
+        <p><strong>Version Control:</strong> Azure DevOps server. </p>
+        <p><strong>CI-CD Solution:</strong> Deployments through Azure DevOps server </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#top" class="go-top__footer"><i class="fa-regular fa-circle-up"></i></a>
+        <a href="mailto:tozequa@gmail.com" class="footer__link">Email Me</a>
+        <ul class="social-list">
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/AntQua" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/antonio-quaresma/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
