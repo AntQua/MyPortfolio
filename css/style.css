@@ -437,7 +437,7 @@ header{
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
 }
 
@@ -448,6 +448,7 @@ header{
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    filter: brightness(100%) saturate(100%) sepia(0%) hue-rotate(0deg) opacity(0.6) drop-shadow(0 0 10px #16e0bd);
 }
 
 .portfolio__item:focus {
@@ -458,7 +459,8 @@ header{
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .75;
+    /* opacity: .75; */
+    filter: none;
 }
 
 
