@@ -461,13 +461,28 @@ header{
     opacity: .75;
 }
 
-.portfolio-item-individual p {
+
+/* -------------------- Individual portfolio item styles --------------------*/
+
+.portfolio-item-individual {
     text-align: justify;
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-item-individual img{
     width: 100%;
     height: 25em; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: var(--bs);
 }
 
 .portfolio-item-individual ul{
@@ -528,17 +543,4 @@ header{
 }
 
 
-/* -------------------- Individual portfolio item styles --------------------*/
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
